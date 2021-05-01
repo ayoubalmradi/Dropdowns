@@ -1,0 +1,103 @@
+/* CSS Document */
+
+
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+	background-color: grey;
+  margin: 0;
+  padding: 0;
+  width: 1960px;
+	}
+
+h1 {
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 50px;
+  text-align: center;
+}	
+
+
+a {
+	color: white;
+}
+
+
+#container {
+  margin: 0 auto;
+	
+}
+
+p {
+	color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+nav {
+  margin: 60px 0;
+  background-color: orange;
+}
+
+nav ul {
+	list-style: none;
+  position: relative;
+  text-align: center;
+	}
+	
+nav ul li {
+	display: inline-block;
+  width: 180px;
+  
+	}
+
+nav a {
+	font-size: 20px;
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-align: center;
+  line-height: 60px;
+}
+
+nav a:hover { 
+	background-color: black;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+  position: absolute;
+  padding: 0;
+  
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display: inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  float: none;
+	display: list-item;
+  position: relative;
+  left: -90px;
+  padding: 0;
+  width: 180px;
+  background: orange;
+  
+}  
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+  top: -52px;
+  left: 180px;
+  
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
